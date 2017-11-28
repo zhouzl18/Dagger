@@ -102,7 +102,7 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
-    protected Long insertUser(User user){
+    protected Long insertUser(User user) throws Exception{
         try {
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues values = new ContentValues();
